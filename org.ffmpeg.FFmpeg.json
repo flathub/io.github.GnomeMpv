@@ -1,0 +1,19 @@
+{
+  "name": "ffmpeg",
+  "cleanup": [ "/include", "/lib/pkgconfig", "/share/ffmpeg/examples" ],
+  "config-opts": [
+    "--enable-shared",
+    "--disable-static",
+    "--enable-gnutls",
+    "--disable-doc",
+    "--disable-programs",
+    "--disable-encoders",
+    "--disable-muxers",
+    "--disable-devices"
+],
+  "sources": [{
+    "type": "archive",
+    "url": "https://ffmpeg.org/releases/ffmpeg-3.2.4.tar.xz",
+    "sha256": "6e38ff14f080c98b58cf5967573501b8cb586e3a173b591f3807d8f0660daf7a"
+  }]
+}
