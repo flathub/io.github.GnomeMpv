@@ -16,6 +16,7 @@
       "--talk-name=org.gtk.vfs",
       "--talk-name=org.gtk.vfs.*",
       "--talk-name=org.gnome.SettingsDaemon",
+      "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
       "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
       "--filesystem=xdg-run/dconf",
       "--filesystem=~/.config/dconf:ro",
