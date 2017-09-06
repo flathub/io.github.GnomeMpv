@@ -53,8 +53,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/mpv-player/mpv/archive/v0.25.0.tar.gz",
-              "sha256": "07423ffad6921ec4da32f703cd7fbfb27012301dcb736ac8542ac8e6083b0bce"
+              "url": "https://github.com/mpv-player/mpv/archive/v0.26.0.tar.gz",
+              "sha256": "daf3ef358d5f260f2269f7caabce27f446c291457ec330077152127133b71b46"
             },
             {
               "type": "file",
@@ -91,8 +91,8 @@
               "build-options": { "env": { "PREFIX": "/app" } },
               "sources": [{
                 "type": "archive",
-                "url": "https://github.com/rg3/youtube-dl/releases/download/2017.06.12/youtube-dl-2017.06.12.tar.gz",
-                "sha256": "3cacd4aaaffd07eecd54eaea84b2a0537df3e5fc7bd5cd3bc96fa34dc8438ddc"
+                "url": "https://github.com/rg3/youtube-dl/releases/download/2017.09.02/youtube-dl-2017.09.02.tar.gz",
+                "sha256": "699a7ca22243e6a11a3e3a2b4f933c1ec0799d205a58c1eb5b139ee53252d9e9"
               }]
             }
           ]
