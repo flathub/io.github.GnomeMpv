@@ -31,9 +31,9 @@
       "builddir": true,
       "sources": [
         {
-          "type": "git",
-          "url": "https://github.com/gnome-mpv/gnome-mpv.git",
-          "commit": "809b98e2d7d79fbe7b492e1a85458f82de3fedc6"
+          "type": "archive",
+          "url": "https://github.com/gnome-mpv/gnome-mpv/releases/download/v0.12/gnome-mpv-0.12.tar.xz",
+          "sha256": "6c121261a1ea7e8065379c5355c2b2061eb4abbff0c8121ada211d4777fa9635"
         },
         {
           "type": "shell",
@@ -43,18 +43,18 @@
       "modules": [
         {
           "name": "libmpv",
-          "cleanup": [ "/bin", "/share" ],
+          "cleanup": [ "/include", "/lib/pkgconfig" ],
           "buildsystem": "simple",
           "build-commands": [
-            "python2 waf configure --prefix=/app --enable-libmpv-shared",
-            "python2 waf build",
-            "python2 waf install"
+            "python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer --disable-build-date --disable-oss-audio --disable-alsa",
+            "python3 waf build",
+            "python3 waf install"
           ],
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/mpv-player/mpv/archive/v0.26.0.tar.gz",
-              "sha256": "daf3ef358d5f260f2269f7caabce27f446c291457ec330077152127133b71b46"
+              "url": "https://github.com/mpv-player/mpv/archive/v0.27.0.tar.gz",
+              "sha256": "341d8bf18b75c1f78d5b681480b5b7f5c8b87d97a0d4f53a5648ede9c219a49c"
             },
             {
               "type": "file",
@@ -68,6 +68,7 @@
             "org.luajit.Luajit.json",
             {
               "name": "libass",
+              "cleanup": [ "/include", "/lib/*.la", "/lib/pkgconfig" ],
               "config-opts": [ "--disable-static" ],
               "sources": [{
                 "type": "archive",
@@ -76,7 +77,7 @@
               }],
               "modules": [{
                 "name": "fribidi",
-                "cleanup": [ "/bin", "/include", "/lib/pkgconfig" ],
+                "cleanup": [ "/bin", "/include", "/lib/pkgconfig", "/lib/*.la", "/share/man" ],
                 "sources": [{
                   "type": "archive",
                   "url": "http://fribidi.org/download/fribidi-0.19.7.tar.bz2",
@@ -87,7 +88,7 @@
             {
               "name": "youtube-dl",
               "no-autogen": true,
-              "cleanup": [ "/man", "/share" ],
+              "cleanup": [ "/etc", "/man", "/share" ],
               "build-options": { "env": { "PREFIX": "/app" } },
               "sources": [{
                 "type": "archive",
