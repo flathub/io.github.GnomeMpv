@@ -1,0 +1,22 @@
+From 0d73b33d60050fd32bf8fae77d831548970a0b69 Mon Sep 17 00:00:00 2001
+From: gnome-mpv <gnome-mpv@nowhere>
+Date: Fri, 13 Oct 2017 23:18:32 -0700
+Subject: [PATCH] Bump version in appdata
+
+---
+ data/io.github.GnomeMpv.appdata.xml.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/data/io.github.GnomeMpv.appdata.xml.in b/data/io.github.GnomeMpv.appdata.xml.in
+index c3f5d86..5712047 100644
+--- a/data/io.github.GnomeMpv.appdata.xml.in
++++ b/data/io.github.GnomeMpv.appdata.xml.in
+@@ -24,7 +24,7 @@
+   </ul>
+  </description>
+  <releases>
+-  <release date="2017-06-12" version="0.12"/>
++  <release date="2017-10-13" version="0.13"/>
+  </releases>
+  <screenshots>
+   <screenshot type="default">
