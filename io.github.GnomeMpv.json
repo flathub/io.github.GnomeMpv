@@ -93,8 +93,8 @@
               "build-options": { "env": { "PREFIX": "/app" } },
               "sources": [{
                 "type": "archive",
-                "url": "https://github.com/rg3/youtube-dl/releases/download/2017.10.12/youtube-dl-2017.10.12.tar.gz",
-                "sha256": "abbfd0f4c941a85fd26af074a026dd1f4e366b385463fd23ef20432e2b2890ac"
+                "url": "https://github.com/rg3/youtube-dl/releases/download/2017.11.06/youtube-dl-2017.11.06.tar.gz",
+                "sha256": "6d0c0226a1e914c94a9a68e8bff5a6498bdf783ffb9513ecf18646139c1e58b6"
               }]
             }
           ]
