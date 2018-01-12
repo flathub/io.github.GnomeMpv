@@ -54,8 +54,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/mpv-player/mpv/archive/v0.27.0.tar.gz",
-              "sha256": "341d8bf18b75c1f78d5b681480b5b7f5c8b87d97a0d4f53a5648ede9c219a49c"
+              "url": "https://github.com/mpv-player/mpv/archive/v0.28.0.tar.gz",
+              "sha256": "eeac559d422357470040b83d8cdabec74b8a64ce8f50d5ee421dd3e4c73457b4"
             },
             {
               "type": "file",
@@ -73,8 +73,8 @@
               "config-opts": [ "--disable-static" ],
               "sources": [{
                 "type": "archive",
-                "url": "https://github.com/libass/libass/releases/download/0.13.7/libass-0.13.7.tar.xz",
-                "sha256": "7065e5f5fb76e46f2042a62e7c68d81e5482dbeeda24644db1bd066e44da7e9d"
+                "url": "https://github.com/libass/libass/releases/download/0.14.0/libass-0.14.0.tar.xz",
+                "sha256": "881f2382af48aead75b7a0e02e65d88c5ebd369fe46bc77d9270a94aa8fd38a2"
               }],
               "modules": [{
                 "name": "fribidi",
@@ -93,8 +93,8 @@
               "build-options": { "env": { "PREFIX": "/app" } },
               "sources": [{
                 "type": "archive",
-                "url": "https://github.com/rg3/youtube-dl/releases/download/2017.11.06/youtube-dl-2017.11.06.tar.gz",
-                "sha256": "6d0c0226a1e914c94a9a68e8bff5a6498bdf783ffb9513ecf18646139c1e58b6"
+                "url": "https://github.com/rg3/youtube-dl/releases/download/2018.01.07/youtube-dl-2018.01.07.tar.gz",
+                "sha256": "280d11c565978d735bae954916390810df1217824bfe704181f1d93ad2f4e1b6"
               }]
             }
           ]

@@ -12,8 +12,9 @@
     "--disable-devices"
   ],
   "sources": [{
-    "type": "archive",
-    "url": "https://ffmpeg.org/releases/ffmpeg-3.3.4.tar.xz",
-    "sha256": "98b97e1b908dfeb6aeb6d407e5a5eacdfc253a40c2d195f5867ed2d1d46ea957"
+    "type": "git",
+    /* MPV depends upon git until 3.5 releases */
+    "url": "https://github.com/FFmpeg/FFmpeg.git",
+    "commit": "6e80079a2840ee407c5d126030eb1066bcbfdfc5"
   }]
 }
