@@ -41,6 +41,12 @@
         {
           "type": "patch",
           "path": "0d73b33d60050fd32bf8fae77d831548970a0b69.patch"
+        },
+        {
+            "type" : "shell",
+            "commands" : [
+                "sed -i 's/ICON_NAME \"gnome-mpv\"/ICON_NAME \"io.github.GnomeMpv\"/' src/gmpv_def.h"
+            ]
         }
       ],
       "modules": [
