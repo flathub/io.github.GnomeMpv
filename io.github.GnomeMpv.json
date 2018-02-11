@@ -62,8 +62,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/mpv-player/mpv/archive/v0.28.0.tar.gz",
-              "sha256": "eeac559d422357470040b83d8cdabec74b8a64ce8f50d5ee421dd3e4c73457b4"
+              "url": "https://github.com/mpv-player/mpv/archive/v0.28.1.tar.gz",
+              "sha256": "0209badcba3c42a54c05d5dc7f59b2d97ecd25b7f957d5fde60b36c362fe2cc4"
             },
             {
               "type": "file",
@@ -95,17 +95,6 @@
               }]
             },
             {
-              "name": "youtube-dl",
-              "no-autogen": true,
-              "cleanup": [ "/etc", "/man", "/share" ],
-              "build-options": { "env": { "PREFIX": "/app" } },
-              "sources": [{
-                "type": "archive",
-                "url": "https://github.com/rg3/youtube-dl/releases/download/2018.01.07/youtube-dl-2018.01.07.tar.gz",
-                "sha256": "280d11c565978d735bae954916390810df1217824bfe704181f1d93ad2f4e1b6"
-              }]
-            },
-            {
               "name": "uchardet",
               "buildsystem": "cmake-ninja",
               "config-opts": [
@@ -125,6 +114,17 @@
                   "sha256": "8351328cdfbcb2432e63938721dd781eb8c11ebc56e3a89d0f84576b96002c61"
                 }
               ]
+            },
+            {
+              "name": "youtube-dl",
+              "no-autogen": true,
+              "cleanup": [ "/etc", "/man", "/share" ],
+              "build-options": { "env": { "PREFIX": "/app" } },
+              "sources": [{
+                "type": "archive",
+                "url": "https://github.com/rg3/youtube-dl/releases/download/2018.02.08/youtube-dl-2018.02.08.tar.gz",
+                "sha256": "af86595a24ea89f1f705e282193ce973f6f6ce1e3e6700ea03ff0974b6aa0547"
+              }]
             }
           ]
         }
