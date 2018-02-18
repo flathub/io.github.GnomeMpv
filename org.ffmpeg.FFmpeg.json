@@ -15,6 +15,6 @@
     "type": "git",
     /* MPV depends upon git until 3.5 releases */
     "url": "https://github.com/FFmpeg/FFmpeg.git",
-    "commit": "6e80079a2840ee407c5d126030eb1066bcbfdfc5"
+    "commit": "dd8351b1184b8054925c28ecc5fcb6dbbc177fad"
   }]
 }

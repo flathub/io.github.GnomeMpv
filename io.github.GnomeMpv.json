@@ -4,8 +4,6 @@
   "runtime-version": "3.26",
   "sdk": "org.gnome.Sdk",
   "command": "gnome-mpv",
-  "rename-icon": "gnome-mpv",
-  "copy-icon": true,
   "finish-args": [
       "--share=ipc",
       "--socket=x11",
@@ -29,24 +27,13 @@
     {
       "name": "gnome-mpv",
       "buildsystem": "meson",
-      "builddir": true,
       "config-opts": ["--buildtype=release"],
       "cleanup": ["/share/man"],
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/gnome-mpv/gnome-mpv/archive/v0.13.tar.gz",
-          "sha256": "ec3e504a20f56a746a1a53b8fdf4dfaa2c74da189b9fa9c0c9b6c5ac4193244b"
-        },
-        {
-          "type": "patch",
-          "path": "0d73b33d60050fd32bf8fae77d831548970a0b69.patch"
-        },
-        {
-            "type" : "shell",
-            "commands" : [
-                "sed -i 's/ICON_NAME \"gnome-mpv\"/ICON_NAME \"io.github.GnomeMpv\"/' src/gmpv_def.h"
-            ]
+          "url": "https://github.com/gnome-mpv/gnome-mpv/archive/v0.14.tar.gz",
+          "sha256": "c0294d7759a2d6daa7d1726b63fc2a6ff3cb3f7eb2edc522d197d3c0f8deb634"
         }
       ],
       "modules": [
@@ -118,12 +105,13 @@
             {
               "name": "youtube-dl",
               "no-autogen": true,
-              "cleanup": [ "/etc", "/man", "/share" ],
-              "build-options": { "env": { "PREFIX": "/app" } },
+              "no-make-install": true,
+              "make-args": ["youtube-dl"],
+              "post-install": ["install youtube-dl /app/bin"],
               "sources": [{
-                "type": "archive",
-                "url": "https://github.com/rg3/youtube-dl/releases/download/2018.02.08/youtube-dl-2018.02.08.tar.gz",
-                "sha256": "af86595a24ea89f1f705e282193ce973f6f6ce1e3e6700ea03ff0974b6aa0547"
+                "type": "git",
+                "url": "https://github.com/rg3/youtube-dl.git",
+                "tag": "2018.02.11"
               }]
             }
           ]
