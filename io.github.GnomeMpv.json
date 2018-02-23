@@ -29,6 +29,12 @@
       "buildsystem": "meson",
       "config-opts": ["--buildtype=release"],
       "cleanup": ["/share/man"],
+      "post-install": [
+        "for size in 64 128; do
+          rsvg-convert -w $size -h $size -f png -o $size.png /app/share/icons/hicolor/scalable/apps/io.github.GnomeMpv.svg
+          install -Dm644 $size.png /app/share/icons/hicolor/${size}x${size}/apps/io.github.GnomeMpv.png
+        done"
+      ],
       "sources": [
         {
           "type": "archive",
