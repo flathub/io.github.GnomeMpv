@@ -55,8 +55,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/mpv-player/mpv/archive/v0.28.1.tar.gz",
-              "sha256": "0209badcba3c42a54c05d5dc7f59b2d97ecd25b7f957d5fde60b36c362fe2cc4"
+              "url": "https://github.com/mpv-player/mpv/archive/v0.28.2.tar.gz",
+              "sha256": "aada14e025317b5b3e8e58ffaf7902e8b6e4ec347a93d25a7c10d3579426d795"
             },
             {
               "type": "file",
