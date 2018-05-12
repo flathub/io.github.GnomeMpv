@@ -1,7 +1,7 @@
 {
   "app-id": "io.github.GnomeMpv",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.26",
+  "runtime-version": "3.28",
   "sdk": "org.gnome.Sdk",
   "command": "gnome-mpv",
   "finish-args": [
@@ -40,6 +40,10 @@
           "type": "archive",
           "url": "https://github.com/gnome-mpv/gnome-mpv/archive/v0.14.tar.gz",
           "sha256": "c0294d7759a2d6daa7d1726b63fc2a6ff3cb3f7eb2edc522d197d3c0f8deb634"
+        },
+        {
+          "type": "patch",
+          "path": "0001-meson-Workaround-meson-regression.patch"
         }
       ],
       "modules": [
@@ -139,7 +143,7 @@
       "sources": [{
         "type": "git",
         "url": "https://github.com/rg3/youtube-dl.git",
-        "tag": "2018.04.16"
+        "tag": "2018.05.09"
       }]
     }
   ]

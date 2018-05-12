@@ -1,0 +1,27 @@
+From 444fa85b950e632b116b4abc678c95bf62cf60d3 Mon Sep 17 00:00:00 2001
+From: Patrick Griffis <tingping@tingping.se>
+Date: Fri, 27 Apr 2018 16:52:26 -0400
+Subject: [PATCH] meson: Workaround meson regression
+
+---
+ src/meson.build | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/src/meson.build b/src/meson.build
+index da64f10..299de9f 100644
+--- a/src/meson.build
++++ b/src/meson.build
+@@ -110,6 +110,10 @@ if libgio.version().version_compare('< 2.52.0')
+   # Created includes of `src/...`:
+   # https://bugzilla.gnome.org/show_bug.cgi?id=778801
+   includes = include_directories('..')
++elif meson.version().version_compare('== 0.46.0')
++  # https://github.com/mesonbuild/meson/issues/3488
++  includes = include_directories('..')
++  sources += generated_gdbus_sources
+ else
+   sources += generated_gdbus_sources
+ endif
+-- 
+2.16.3
+
