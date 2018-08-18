@@ -59,8 +59,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/mpv-player/mpv/archive/v0.28.2.tar.gz",
-              "sha256": "aada14e025317b5b3e8e58ffaf7902e8b6e4ec347a93d25a7c10d3579426d795"
+              "url": "https://github.com/mpv-player/mpv/archive/v0.29.0.tar.gz",
+              "sha256": "772af878cee5495dcd342788a6d120b90c5b1e677e225c7198f1e76506427319"
             },
             {
               "type": "file",
@@ -86,8 +86,8 @@
               ],
               "sources": [{
                 "type": "archive",
-                "url": "https://ffmpeg.org/releases/ffmpeg-4.0.tar.xz",
-                "sha256": "ed945daf40b124e77a685893cc025d086f638bc703183460aff49508edb3a43f"
+                "url": "https://ffmpeg.org/releases/ffmpeg-4.0.2.tar.xz",
+                "sha256": "a95c0cc9eb990e94031d2183f2e6e444cc61c99f6f182d1575c433d62afb2f97"
               }]
             },
             {
@@ -129,6 +129,17 @@
                   "sha256": "8351328cdfbcb2432e63938721dd781eb8c11ebc56e3a89d0f84576b96002c61"
                 }
               ]
+            },
+            {
+              "name": "wayland-protocols",
+              "cleanup": [ "*" ],
+              "sources": [
+                   {
+                       "type": "archive",
+                       "url": "https://wayland.freedesktop.org/releases/wayland-protocols-1.14.tar.xz",
+                       "sha256": "9648896b2462b49b15a69b60f44656593c170c0e73121c890eb16d0c1d9376f6"
+                   }
+              ]
             }
           ]
         }
@@ -143,7 +154,7 @@
       "sources": [{
         "type": "git",
         "url": "https://github.com/rg3/youtube-dl.git",
-        "tag": "2018.05.09"
+        "tag": "2018.08.04"
       }]
     }
   ]
