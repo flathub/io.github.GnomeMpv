@@ -11,6 +11,7 @@
       "--device=dri",
       "--share=network",
       "--socket=pulseaudio",
+      "--filesystem=xdg-pictures",
       "--talk-name=org.gtk.vfs",
       "--talk-name=org.gtk.vfs.*",
       "--talk-name=org.gnome.SettingsDaemon",
@@ -20,7 +21,6 @@
       "--filesystem=~/.config/dconf:ro",
       "--talk-name=ca.desrt.dconf",
       "--own-name=org.mpris.MediaPlayer2.GnomeMpv.*",
-      "--env=SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt",
       "--env=LC_NUMERIC=C"
   ],
   "modules": [
@@ -44,6 +44,10 @@
         {
           "type": "patch",
           "path": "0001-meson-Workaround-meson-regression.patch"
+        },
+        {
+          "type": "patch",
+          "path": "7aea4058a28529baf2a51931cfb9bf83d2d519e0.patch"
         }
       ],
       "modules": [
