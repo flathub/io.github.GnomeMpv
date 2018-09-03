@@ -85,7 +85,8 @@
                 "--disable-programs",
                 "--disable-encoders",
                 "--disable-muxers",
-                "--disable-devices"
+                "--disable-devices",
+                "--enable-encoder=png"
               ],
               "sources": [{
                 "type": "archive",
