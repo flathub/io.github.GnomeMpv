@@ -37,16 +37,12 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/gnome-mpv/gnome-mpv/archive/v0.14.tar.gz",
-          "sha256": "c0294d7759a2d6daa7d1726b63fc2a6ff3cb3f7eb2edc522d197d3c0f8deb634"
+          "url": "https://github.com/gnome-mpv/gnome-mpv/archive/v0.15.tar.gz",
+          "sha256": "3bcfaed092d3c0da49409d56398a81305440234bd89ac2604375aa737fdb0506"
         },
         {
           "type": "patch",
-          "path": "0001-meson-Workaround-meson-regression.patch"
-        },
-        {
-          "type": "patch",
-          "path": "7aea4058a28529baf2a51931cfb9bf83d2d519e0.patch"
+          "path": "fdbce5c3009bbe2c93d4890c654d54ab9fe0f8a5.patch"
         }
       ],
       "modules": [
