@@ -8,7 +8,7 @@
       "--share=ipc",
       "--socket=x11",
       "--socket=wayland",
-      "--device=dri",
+      "--device=all",
       "--share=network",
       "--socket=pulseaudio",
       "--filesystem=xdg-pictures",
@@ -51,7 +51,7 @@
           "cleanup": [ "/include", "/lib/pkgconfig" ],
           "buildsystem": "simple",
           "build-commands": [
-            "python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer --disable-build-date --disable-oss-audio --disable-alsa",
+            "python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer --disable-build-date --disable-oss-audio --disable-alsa --enable-tv",
             "python3 waf build",
             "python3 waf install"
           ],
@@ -70,6 +70,17 @@
           ],
           "modules": [
             "org.luajit.Luajit.json",
+            "shared-modules/udev/udev-175.json",
+            {
+              "name": "libv4l2",
+              "cleanup": [ "/include", "/lib/*.la", "/lib/pkgconfig" ],
+              "config-opts": [ "--disable-static" ],
+              "sources": [{
+                "type": "archive",
+                "url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.14.2.tar.bz2",
+                "sha256": "e6b962c4b1253cf852c31da13fd6b5bb7cbe5aa9e182881aec55123bae680692"
+              }]
+            },
             {
               "name": "ffmpeg",
               "cleanup": [ "/include", "/lib/pkgconfig", "/share/ffmpeg/examples" ],
@@ -81,8 +92,8 @@
                 "--disable-programs",
                 "--disable-encoders",
                 "--disable-muxers",
-                "--disable-devices",
-                "--enable-encoder=png"
+                "--enable-encoder=png",
+                "--enable-libv4l2"
               ],
               "sources": [{
                 "type": "archive",
