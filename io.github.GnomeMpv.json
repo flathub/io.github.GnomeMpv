@@ -73,7 +73,7 @@
             "shared-modules/udev/udev-175.json",
             {
               "name": "libv4l2",
-              "cleanup": [ "/include", "/lib/*.la", "/lib/pkgconfig" ],
+              "cleanup": [ "/include", "/lib/*.la", "/lib/*/*.la", "/lib*/*/*/*.la", "/lib/pkgconfig", "/share/man" ],
               "config-opts": [ "--disable-static" ],
               "sources": [{
                 "type": "archive",
