@@ -1,7 +1,7 @@
 {
   "app-id": "io.github.GnomeMpv",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.28",
+  "runtime-version": "3.30",
   "sdk": "org.gnome.Sdk",
   "command": "gnome-mpv",
   "finish-args": [
@@ -58,13 +58,13 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/mpv-player/mpv/archive/v0.29.0.tar.gz",
-              "sha256": "772af878cee5495dcd342788a6d120b90c5b1e677e225c7198f1e76506427319"
+              "url": "https://github.com/mpv-player/mpv/archive/v0.29.1.tar.gz",
+              "sha256": "f9f9d461d1990f9728660b4ccb0e8cb5dce29ccaa6af567bec481b79291ca623"
             },
             {
               "type": "file",
-              "url": "https://waf.io/waf-1.9.8",
-              "sha256": "167dc42bab6d5bd823b798af195420319cb5c9b571e00db7d83df2a0fe1f4dbf",
+              "url": "https://waf.io/waf-2.0.12",
+              "sha256": "0979ca87f45928e0d752049ab2f43be8551249be73dc5563b944ec54f8871d1f",
               "dest-filename": "waf"
             }
           ],
@@ -77,8 +77,8 @@
               "config-opts": [ "--disable-static" ],
               "sources": [{
                 "type": "archive",
-                "url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.14.2.tar.bz2",
-                "sha256": "e6b962c4b1253cf852c31da13fd6b5bb7cbe5aa9e182881aec55123bae680692"
+                "url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.16.0.tar.bz2",
+                "sha256": "f1b425584284bac378b76331c0671dc890bd7af49c03e8a6cc0c70e57eea0bad"
               }]
             },
             {
@@ -165,7 +165,7 @@
       "sources": [{
         "type": "git",
         "url": "https://github.com/rg3/youtube-dl.git",
-        "tag": "2018.08.04"
+        "tag": "2018.10.05"
       }]
     }
   ]
