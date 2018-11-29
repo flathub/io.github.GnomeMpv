@@ -149,7 +149,7 @@
       "name": "youtube-dl",
       "no-autogen": true,
       "no-make-install": true,
-      "make-args": ["youtube-dl"],
+      "make-args": ["youtube-dl", "PYTHON=/usr/bin/python3"],
       "post-install": ["install youtube-dl /app/bin"],
       "sources": [{
         "type": "git",
