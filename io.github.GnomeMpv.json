@@ -37,12 +37,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/gnome-mpv/gnome-mpv/archive/v0.15.tar.gz",
-          "sha256": "3bcfaed092d3c0da49409d56398a81305440234bd89ac2604375aa737fdb0506"
-        },
-        {
-          "type": "patch",
-          "path": "fdbce5c3009bbe2c93d4890c654d54ab9fe0f8a5.patch"
+          "url": "https://github.com/gnome-mpv/gnome-mpv/archive/v0.16.tar.gz",
+          "sha256": "aab42f7c09b9bb018020c6eabcccf839e4e9bbce7705641795f47c548a77cd1a"
         }
       ],
       "modules": [
@@ -154,8 +150,8 @@
       "sources": [{
         "type": "git",
         "url": "https://github.com/rg3/youtube-dl.git",
-        "tag": "2018.11.18",
-        "commit": "5bb04792696c41f66f2114b0cc05b01135fa1f68"
+        "tag": "2019.01.17",
+        "commit": "29639b363ddab7903ceae096912a0227c8017533"
       }]
     }
   ]
