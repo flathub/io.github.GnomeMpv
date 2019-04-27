@@ -38,7 +38,7 @@
         {
           "type": "archive",
           "url": "https://github.com/gnome-mpv/gnome-mpv/archive/v0.16.tar.gz",
-          "sha256": "aab42f7c09b9bb018020c6eabcccf839e4e9bbce7705641795f47c548a77cd1a"
+          "sha256": "c886b1776a4989085e02d436a7373445499e57ac26622849b924a81c56378f77"
         }
       ],
       "modules": [
