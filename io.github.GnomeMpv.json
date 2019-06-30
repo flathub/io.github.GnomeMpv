@@ -151,7 +151,7 @@
         "type": "git",
         "url": "https://github.com/rg3/youtube-dl.git",
         "tag": "2019.06.27",
-        "commit": "3e7ec5330acf29845a1c3851c3cbfd8777ad0ade"
+        "commit": "8c8cae91ece9841567aa48095245f92ae8f4b295"
       }]
     }
   ]
