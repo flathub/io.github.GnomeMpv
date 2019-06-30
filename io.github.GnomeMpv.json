@@ -150,7 +150,7 @@
       "sources": [{
         "type": "git",
         "url": "https://github.com/rg3/youtube-dl.git",
-        "tag": "2019.04.24",
+        "tag": "2019.06.27",
         "commit": "3e7ec5330acf29845a1c3851c3cbfd8777ad0ade"
       }]
     }
