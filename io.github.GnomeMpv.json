@@ -39,6 +39,10 @@
           "type": "archive",
           "url": "https://github.com/gnome-mpv/gnome-mpv/archive/v0.16.tar.gz",
           "sha256": "c886b1776a4989085e02d436a7373445499e57ac26622849b924a81c56378f77"
+        },
+        {
+         "type": "shell",
+         "commands": [ "sed -i '11i\ <content_rating type=\"oars-1.1\" />' ./data/io.github.GnomeMpv.appdata.xml.in" ]
         }
       ],
       "modules": [
@@ -150,8 +154,8 @@
       "sources": [{
         "type": "git",
         "url": "https://github.com/rg3/youtube-dl.git",
-        "tag": "2019.04.24",
-        "commit": "3e7ec5330acf29845a1c3851c3cbfd8777ad0ade"
+        "tag": "2019.06.27",
+        "commit": "8c8cae91ece9841567aa48095245f92ae8f4b295"
       }]
     }
   ]
