@@ -42,7 +42,7 @@
         },
         {
          "type": "shell",
-         "commands": [ "sed -i '11i\ <content_rating type="oars-1.1" />' ./data/io.github.GnomeMpv.appdata.xml.in" ]
+         "commands": [ "sed -i '11i\ <content_rating type=\"oars-1.1\" />' ./data/io.github.GnomeMpv.appdata.xml.in" ]
         }
       ],
       "modules": [
