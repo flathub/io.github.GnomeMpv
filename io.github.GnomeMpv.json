@@ -39,6 +39,10 @@
           "type": "archive",
           "url": "https://github.com/gnome-mpv/gnome-mpv/archive/v0.16.tar.gz",
           "sha256": "c886b1776a4989085e02d436a7373445499e57ac26622849b924a81c56378f77"
+        },
+        {
+         "type": "shell",
+         "commands": [ "sed -i '11i\ <content_rating type="oars-1.1" />' ./data/io.github.GnomeMpv.appdata.xml.in" ]
         }
       ],
       "modules": [
